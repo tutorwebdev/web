@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="h1">online shop</p>
+    <p class="h2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="images">
+        <div class="c1">
+            <img src="im1.jpeg" alt="" class="im1">
+            <p class="p1">oil soap</p>
+            <p class="price">$5.00</p>
+            <input type="submit" class="add" value="add to card">
+        </div>
+        <div class="c1">
+            <img src="im2.jpeg" alt="" class="im1">
+            <p class="p1">organic soap</p>
+            <p class="price">$5.00</p>
+            <input type="submit" class="add" value="add to card">
+        </div>
+        <div class="c1">
+            <img src="im3.webp" alt="" class="im1">
+            <p class="p1">glycerin soap</p>
+            <p class="price">$5.00</p>
+            <input type="submit" class="add" value="add to card">
+        </div>
+        <div class="c1">
+            <img src="im4.webp" alt="" class="im1">
+            <p class="p1">olive oil soap</p>
+            <p class="price">$5.00</p>
+            <input type="submit" class="add" value="add to card">
+        </div>
+
+    </div>
+</body>
+</html>
+
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size: 60px;
+    text-align: center;
+}
+.h2{
+    text-align: center;
+    width: 700px;
+
+
+}
+.images{
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid rgb(0, 0, 0); 
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(2,50%);
+}
+.im1{
+
+height: 200px;
+width: 200px;
+grid-column: 1/2;
+grid-row: 1/2;
+
+}
+.im2{
+    width: 200px;
+
+    height: 200px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.im3{
+    width: 200px;
+
+
+    height: 200px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.im4{
+    width: 200px;
+
+    height: 200px; 
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.p1{
+    text-align:center;
+}
+.price{
+    text-align: center;
+}
+.add{
+    text-align: center;
+    background-color: rgb(161, 146, 128);
+    width: 100px;
+    
+}
+.c1{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(235, 212, 185);
+    height: 355px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: 10px;
+    
+}
+
+</style>
